@@ -70,7 +70,7 @@
             <div>
               <input name="nombre" type="text" class="form-control" placeholder="Nombre" required="" />
             </div>
-            
+
             <div>
               <input name="cedula" type="text" class="form-control" placeholder="Cedula" required="" />
             </div>
@@ -82,7 +82,7 @@
             <div class="clearfix"></div>
 
             <div class="separator">
-              
+
               @php
               if(!empty($message))
               echo $message;
@@ -123,8 +123,8 @@
 			cambio.type = "password";
 			$('.icon').removeClass('fa fa-eye').addClass('fa fa-eye-slash');
 		}
-	} 
-	
+	}
+
 	$(document).ready(function () {
 	//CheckBox mostrar contraseña
 	$('#ShowPassword').click(function () {

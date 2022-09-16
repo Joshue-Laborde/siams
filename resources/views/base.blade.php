@@ -32,7 +32,7 @@
                     <!-- /sidebar menu -->
 
                     <!-- /menu footer buttons -->
-                        
+
                     <div class="sidebar-footer hidden-small">
                         <!--
                         <a data-toggle="tooltip" data-placement="top" title="Settings">
@@ -163,7 +163,7 @@
 
             <!-- footer content -->
             <footer>
-                <div class="pull-right">
+                <div class="pull-center">
                     Todos los derechos reservados © Universidad de Guayaquil © 2021
                 </div>
                 <div class="clearfix"></div>

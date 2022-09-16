@@ -20,7 +20,7 @@
 
 .cuadro:hover {
     /*background: rgba(117, 198, 243, 0.4);*/
-    
+
     cursor: pointer;
 }
 
@@ -67,7 +67,7 @@
 .centro:hover {
     border: 1px solid rgba(117, 198, 243, 0.4);
     /*background-color: rgba(117, 198, 243, 0.4);*/
-    
+
     cursor: pointer;
 }
 
@@ -135,7 +135,7 @@
 
 .cuadro-leche:hover {
     /*background: rgba(117, 198, 243, 0.4);*/
-    
+
     cursor: pointer;
 }
 
@@ -188,6 +188,28 @@
 .centro-leche:hover {
     border: 1px solid rgba(117, 198, 243, 0.4);
     /*background-color: rgba(117, 198, 243, 0.4);*/
-    
+
     cursor: pointer;
 }
+
+.cropped {
+    width: 450px;
+    height: 350px;
+    overflow: hidden;
+    }
+
+    #centrador{
+        position: relative;
+        width: 300px;
+        height: 380px;
+      }
+
+      #imagen{
+          position: absolute;
+          width: 100px;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          margin: auto;
+      }

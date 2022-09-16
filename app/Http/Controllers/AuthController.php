@@ -16,9 +16,12 @@ class AuthController extends Controller
             'password' => 'required|string',
         ]);
 
+        //return redirect()->route('home');
+        //return redirect('/confirmar');
+
         $client = new Client();
         $url = 'https://gmb157pk4i.execute-api.us-east-1.amazonaws.com/PRODUCCION/login';
-        
+
         $headers = [
             'x-api-key' => 'LMkLjl3mELIdVmKcpoRG95pxetk5Zgg461YOytTg'
         ];

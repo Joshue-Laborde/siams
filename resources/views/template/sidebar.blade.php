@@ -21,9 +21,9 @@
             <li><a href=''><i class="fas fa-calendar-alt"></i> Agendar cita 2 </a></li>
 
             </li> -->
+
         </ul>
         <ul class="nav side-menu">
-
             <li><a><i class="fa fa-chart-line"></i> Predicción <span class="fa fa-chevron-down"></span></a>
                 <ul class="nav child_menu">
                     <li><a href="{{ url('/prediction') }}">Redes Neuronales</a></li>
@@ -39,6 +39,18 @@
             <li><a href=''><i class="fas fa-calendar-alt"></i> Agendar cita 2 </a></li>
 
             </li> -->
+        </ul>
+
+        <ul class="nav side-menu">
+            <li><a><i class="fa fa-bar-chart"></i> Analisis de datos <span class="fa fa-chevron-down"></span></a>
+
+                <ul class="nav child_menu">
+                    <li><a href="{{url('/kmeans')}}">Agrupación</a></li>
+                    <li><a href="{{url('/RegLineal')}}">Predicción</a></li>
+                    <li><a href="{{url('/Knn')}}">Clasificación</a></li>
+                </ul>
+
+            </li>
         </ul>
     </div>
 

@@ -29,7 +29,7 @@ class ARulesController extends Controller
         ->select(DB::raw('id_det_tra, id_trayectoria, orden, fecha, longitud, latitud, distancia, duracion, velocidad, coordenadas, tipo_coordenada'))
         ->whereBetween('inf_trayectorias_det.fecha', [$startDate, $endDate])
         ->inRandomOrder()->limit($maxAmount)
-        ->get()->toArray();    
+        ->get()->toArray();
         $matrix  = [['id_det_tra', 'id_trayectoria', 'orden', 'fecha', 'longitud', 'latitud', 'distancia', 'duracion', 'velocidad', 'coordenadas', 'tipo_coordenada']];
         foreach ($query as $value) {
             //var_dump($value->latitud);
@@ -60,7 +60,7 @@ class ARulesController extends Controller
         fclose($fp);
         $puntos = array_slice($matrix, 1);
 
-        // return [json_encode($puntos)];    
+        // return [json_encode($puntos)];
         return json_encode(array(
             "puntos" => $puntos,
             "fecha_csv" => $fecha_csv
@@ -90,7 +90,7 @@ class ARulesController extends Controller
         $lift = $request->var_lift;
         $salida = shell_exec('python "'. env('AR_APRIORI') .'" "'. $csv . '" ' . $support. ' ' .$confidence. ' ' .$lift);
         //echo 'python "'. env('AR_APRIORI') .'" "'. $csv . '" ' . $support. ' ' .$confidence. ' ' .$lift;
-       // $Texto = 'python "'. env('AR_APRIORI') .'" "'. $csv . '" ' . $support. ' ' .$confidence. ' ' .$lift;    
+       // $Texto = 'python "'. env('AR_APRIORI') .'" "'. $csv . '" ' . $support. ' ' .$confidence. ' ' .$lift;
         return json_encode($salida);
         //$response = [];
         //return [json_encode($Texto)];
