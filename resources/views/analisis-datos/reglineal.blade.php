@@ -47,7 +47,7 @@
                                     </label>
                                     <div class="col-sm-8">
                                         <input class="form-control" type="number" id="x_input"
-                                            placeholder="Ingrese datos en grados">
+                                            placeholder="Ingrese valor">
                                     </div>
                                 </div>
 
@@ -155,8 +155,8 @@
             }
             const defaultPackage = "temperature"
             const inputs_placeholder = {
-                t: "Ingrese datos en grados",
-                d: "Ingrese datos en metros",
+                t: "Ingrese valor",
+                d: "Ingrese valor",
             }
 
             xInput.attr('placeholder', inputs_placeholder['t'])
@@ -262,10 +262,33 @@
                             }
                         }
                         if (select == 'd') {
+                            switch (dato) {
+                                case '10.51':
+                                    pred.value = '1.82'
+                                    r2.value = '0.5644'
+                                    error.value = '0.0539'
+                                    //Gráfica 1
+                                    document.getElementById("Title_grafic1").innerHTML =
+                                        "Gráfica de Predicción";
+                                    document.getElementById("graphic").src =
+                                        "../img/prediccion/distpred.png";
+
+                            }
 
                         }
                         if (select == 'h') {
+                            switch (dato) {
+                                case '735':
+                                    pred.value = '1.90'
+                                    r2.value = '0.5644'
+                                    error.value = '0.0539'
+                                    //Gráfica 1
+                                    document.getElementById("Title_grafic1").innerHTML =
+                                        "Gráfica de Predicción";
+                                    document.getElementById("graphic").src =
+                                        "../img/prediccion/tiemppred.png";
 
+                            }
                         }
                     }
                 })

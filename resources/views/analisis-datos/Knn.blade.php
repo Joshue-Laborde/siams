@@ -255,13 +255,6 @@
                                     "Gráfica de las clasificaciones";
                                 document.getElementById("graphic3").src =
                                     "../img/clasificacion/k3tempclass.jpg";
-
-                                /* //Gráfica 4
-                                document.getElementById("Title_grafic4").innerHTML =
-                                    "Gráfica Correlación de Datos.";
-                                document.getElementById("graphic4").src =
-                                    "/img/img_arules/correlacion.png?"; */
-
                                 break;
                         }
 
@@ -269,22 +262,46 @@
                     if (select == 'd') {
                         switch (selectK) {
                             case '2':
-                                cent.value = '[[0.1181 0.0372] \n[0.3866 0.0409]]'
-                                sil.value = '0.606'
+                                prec.value = '87.07%'
+                                //Gráfica 1
+                                document.getElementById("Title_grafic1").innerHTML =
+                                    "Valor óptimo de K";
+                                document.getElementById("graphic").src =
+                                    "../img/clasificacion/k2distcodo.png";
+                                //Gráfica 2
+                                document.getElementById("Title_grafic2").innerHTML =
+                                    "Matriz de confusión";
+                                document.getElementById("plot").src =
+                                    "../img/clasificacion/k2distmatriz.png";
+
+                                //Gráfica 3
+                                document.getElementById("Title_grafic3").innerHTML =
+                                    "Gráfica de las clasificaciones";
+                                document.getElementById("graphic3").src =
+                                    "../img/clasificacion/k2distclass.png";
                                 break;
                         }
                     }
                     if (select == 'h') {
                         switch (selectK) {
-                            case '6':
-                                cent.value = '[[0.34985912 0.33199195]' +
-                                    '[0.97857454 0.69887163]' +
-                                    '[0.97871553 0.33869795]' +
-                                    '[0.02696334 0.3124876 ]' +
-                                    '[0.17771293 0.33290297]' +
-                                    '[0.32198444 0.69850352]]'
-                                sil.value = '0.914'
-                                console.log('temp')
+                            case '3':
+                            prec.value = '98.67%'
+                                 //Gráfica 1
+                                 document.getElementById("Title_grafic1").innerHTML =
+                                    "Valor óptimo de K";
+                                document.getElementById("graphic").src =
+                                    "../img/clasificacion/k3tiempcodo.png";
+                                //Gráfica 2
+                                document.getElementById("Title_grafic2").innerHTML =
+                                    "Matriz de confusión";
+                                document.getElementById("plot").src =
+                                    "../img/clasificacion/k3tiempmatriz.png";
+
+                                //Gráfica 3
+                                document.getElementById("Title_grafic3").innerHTML =
+                                    "Gráfica de las clasificaciones";
+                                document.getElementById("graphic3").src =
+                                    "../img/clasificacion/k3tiempclass.png";
                                 break;
                         }
                     }

@@ -281,6 +281,22 @@
                                 case '2':
                                     cent.value = '[[0.1181 0.0372] \n[0.3866 0.0409]]'
                                     sil.value = '0.606'
+                                    //Gráfica 1
+                                    document.getElementById("Title_grafic1").innerHTML =
+                                        "Distribución de los puntos";
+                                    document.getElementById("graphic").src =
+                                        "../img/agrupacion/k2distpuntos.png";
+                                    //Gráfica 2
+                                    document.getElementById("Title_grafic2").innerHTML =
+                                        "Gráfica Elbow";
+                                    document.getElementById("plot").src =
+                                        "../img/agrupacion/k2distcodo.png?";
+
+                                    //Gráfica 3
+                                    document.getElementById("Title_grafic3").innerHTML =
+                                        "Gráfica de las Agrupaciones";
+                                    document.getElementById("graphic3").src =
+                                        "../img/agrupacion/k2distfinal.png";
                                     break;
                             }
                         }
@@ -294,7 +310,22 @@
                                         '[0.17771293 0.33290297]' +
                                         '[0.32198444 0.69850352]]'
                                     sil.value = '0.914'
-                                    console.log('temp')
+                                    //Gráfica 1
+                                    document.getElementById("Title_grafic1").innerHTML =
+                                        "Distribución de los puntos";
+                                    document.getElementById("graphic").src =
+                                        "../img/agrupacion/k6tiempuntos.png";
+                                    //Gráfica 2
+                                    document.getElementById("Title_grafic2").innerHTML =
+                                        "Gráfica Elbow";
+                                    document.getElementById("plot").src =
+                                        "../img/agrupacion/k6tiempcodo.png?";
+
+                                    //Gráfica 3
+                                    document.getElementById("Title_grafic3").innerHTML =
+                                        "Gráfica de las Agrupaciones";
+                                    document.getElementById("graphic3").src =
+                                        "../img/agrupacion/k6tiempfinal.png";
                                     break;
                             }
                         }
