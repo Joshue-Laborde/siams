@@ -247,85 +247,126 @@
                         if (select == 't') {
                             switch (selectK) {
                                 case '2':
-                                    cent.value = '[[0.4946 0.3237] \n[0.6477 0.6640]]'
-                                    sil.value = '0.862'
-                                    //Gráfica 1
-                                    document.getElementById("Title_grafic1").innerHTML =
-                                        "Distribución de los puntos";
-                                    document.getElementById("graphic").src =
-                                        "../img/agrupacion/k2Temppuntos.png";
-                                    //Gráfica 2
-                                    document.getElementById("Title_grafic2").innerHTML =
-                                        "Gráfica Elbow";
-                                    document.getElementById("plot").src =
-                                        "../img/agrupacion/k2Tempcodo.png?";
+                                    swal.fire({
+                                        title: "Ejecutando algoritmo...",
+                                        html: '',
+                                        timer: 2000,
+                                        timerProgressBar: true,
+                                        showConfirmButton: false,
+                                        animation: true,
+                                        onOpen: () => {
+                                            Swal.showLoading()
+                                        }
+                                    }).then((result) => {
+                                        cent.value =
+                                            '[[0.4946 0.3237] \n[0.6477 0.6640]]'
+                                        sil.value = '0.862'
+                                        //Gráfica 1
+                                        document.getElementById("Title_grafic1")
+                                            .innerHTML =
+                                            "Distribución de los puntos";
+                                        document.getElementById("graphic").src =
+                                            "../img/agrupacion/k2Temppuntos.png";
+                                        //Gráfica 2
+                                        document.getElementById("Title_grafic2")
+                                            .innerHTML =
+                                            "Gráfica Elbow";
+                                        document.getElementById("plot").src =
+                                            "../img/agrupacion/k2Tempcodo.png?";
 
-                                    //Gráfica 3
-                                    document.getElementById("Title_grafic3").innerHTML =
-                                        "Gráfica de las Agrupaciones";
-                                    document.getElementById("graphic3").src =
-                                        "../img/agrupacion/k2Tempfinal.png";
-
-                                    /* //Gráfica 4
-                                    document.getElementById("Title_grafic4").innerHTML =
-                                        "Gráfica Correlación de Datos.";
-                                    document.getElementById("graphic4").src =
-                                        "/img/img_arules/correlacion.png?"; */
-
+                                        //Gráfica 3
+                                        document.getElementById("Title_grafic3")
+                                            .innerHTML =
+                                            "Gráfica de las Agrupaciones";
+                                        document.getElementById("graphic3").src =
+                                            "../img/agrupacion/k2Tempfinal.png";
+                                    })
                                     break;
+
                             }
 
                         }
                         if (select == 'd') {
                             switch (selectK) {
                                 case '2':
-                                    cent.value = '[[0.1181 0.0372] \n[0.3866 0.0409]]'
-                                    sil.value = '0.606'
-                                    //Gráfica 1
-                                    document.getElementById("Title_grafic1").innerHTML =
-                                        "Distribución de los puntos";
-                                    document.getElementById("graphic").src =
-                                        "../img/agrupacion/k2distpuntos.png";
-                                    //Gráfica 2
-                                    document.getElementById("Title_grafic2").innerHTML =
-                                        "Gráfica Elbow";
-                                    document.getElementById("plot").src =
-                                        "../img/agrupacion/k2distcodo.png?";
+                                    swal.fire({
+                                        title: "Ejecutando algoritmo...",
+                                        html: '',
+                                        timer: 2000,
+                                        timerProgressBar: true,
+                                        showConfirmButton: false,
+                                        animation: true,
+                                        onOpen: () => {
+                                            Swal.showLoading()
+                                        }
+                                    }).then((result) => {
+                                        cent.value =
+                                            '[[0.1181 0.0372] \n[0.3866 0.0409]]'
+                                        sil.value = '0.606'
+                                        //Gráfica 1
+                                        document.getElementById("Title_grafic1")
+                                            .innerHTML =
+                                            "Distribución de los puntos";
+                                        document.getElementById("graphic").src =
+                                            "../img/agrupacion/k2distpuntos.png";
+                                        //Gráfica 2
+                                        document.getElementById("Title_grafic2")
+                                            .innerHTML =
+                                            "Gráfica Elbow";
+                                        document.getElementById("plot").src =
+                                            "../img/agrupacion/k2distcodo.png?";
 
-                                    //Gráfica 3
-                                    document.getElementById("Title_grafic3").innerHTML =
-                                        "Gráfica de las Agrupaciones";
-                                    document.getElementById("graphic3").src =
-                                        "../img/agrupacion/k2distfinal.png";
+                                        //Gráfica 3
+                                        document.getElementById("Title_grafic3")
+                                            .innerHTML =
+                                            "Gráfica de las Agrupaciones";
+                                        document.getElementById("graphic3").src =
+                                            "../img/agrupacion/k2distfinal.png";
+                                    })
                                     break;
                             }
                         }
                         if (select == 'h') {
                             switch (selectK) {
                                 case '6':
-                                    cent.value = '[[0.34985912 0.33199195]' +
-                                        '[0.97857454 0.69887163]' +
-                                        '[0.97871553 0.33869795]' +
-                                        '[0.02696334 0.3124876 ]' +
-                                        '[0.17771293 0.33290297]' +
-                                        '[0.32198444 0.69850352]]'
-                                    sil.value = '0.914'
-                                    //Gráfica 1
-                                    document.getElementById("Title_grafic1").innerHTML =
-                                        "Distribución de los puntos";
-                                    document.getElementById("graphic").src =
-                                        "../img/agrupacion/k6tiempuntos.png";
-                                    //Gráfica 2
-                                    document.getElementById("Title_grafic2").innerHTML =
-                                        "Gráfica Elbow";
-                                    document.getElementById("plot").src =
-                                        "../img/agrupacion/k6tiempcodo.png?";
+                                    swal.fire({
+                                        title: "Ejecutando algoritmo...",
+                                        html: '',
+                                        timer: 2000,
+                                        timerProgressBar: true,
+                                        showConfirmButton: false,
+                                        animation: true,
+                                        onOpen: () => {
+                                            Swal.showLoading()
+                                        }
+                                    }).then((result) => {
+                                        cent.value = '[[0.34985912 0.33199195]' +
+                                            '[0.97857454 0.69887163]' +
+                                            '[0.97871553 0.33869795]' +
+                                            '[0.02696334 0.3124876 ]' +
+                                            '[0.17771293 0.33290297]' +
+                                            '[0.32198444 0.69850352]]'
+                                        sil.value = '0.914'
+                                        //Gráfica 1
+                                        document.getElementById("Title_grafic1")
+                                            .innerHTML =
+                                            "Distribución de los puntos";
+                                        document.getElementById("graphic").src =
+                                            "../img/agrupacion/k6tiempuntos.png";
+                                        //Gráfica 2
+                                        document.getElementById("Title_grafic2")
+                                            .innerHTML =
+                                            "Gráfica Elbow";
+                                        document.getElementById("plot").src =
+                                            "../img/agrupacion/k6tiempcodo.png?";
 
-                                    //Gráfica 3
-                                    document.getElementById("Title_grafic3").innerHTML =
-                                        "Gráfica de las Agrupaciones";
-                                    document.getElementById("graphic3").src =
-                                        "../img/agrupacion/k6tiempfinal.png";
+                                        //Gráfica 3
+                                        document.getElementById("Title_grafic3")
+                                            .innerHTML =
+                                            "Gráfica de las Agrupaciones";
+                                        document.getElementById("graphic3").src =
+                                            "../img/agrupacion/k6tiempfinal.png";
+                                    })
                                     break;
                             }
                         }

@@ -238,7 +238,8 @@
                     allowOutsideClick: false,
                     confirmButtonColor: '#3085d6',
                     confirmButtonText: 'Si',
-                    showLoaderOnConfirm: false,
+                    timer: 2000,
+                    showLoaderOnConfirm: true,
                     allowOutsideClick: () => !Swal.isLoading(),
                 }).then((result) => {
                     if (result.isConfirmed) {
@@ -250,28 +251,53 @@
                         if (select == 't') {
                             switch (dato) {
                                 case '26':
-                                    pred.value = '1.96'
-                                    r2.value = '0.5644'
-                                    error.value = '0.0539'
-                                    //Gráfica 1
-                                    document.getElementById("Title_grafic1").innerHTML =
-                                        "Gráfica de Predicción";
-                                    document.getElementById("graphic").src =
-                                        "../img/prediccion/temppred.png";
-
+                                    swal.fire({
+                                        title: "Ejecutando algoritmo...",
+                                        html: '',
+                                        timer: 20000,
+                                        timerProgressBar: true,
+                                        showConfirmButton: false,
+                                        animation: true,
+                                        onOpen: () => {
+                                            Swal.showLoading()
+                                        }
+                                    }).then((result) => {
+                                        pred.value = '1.96'
+                                        r2.value = '0.5644'
+                                        error.value = '0.0539'
+                                        //Gráfica 1
+                                        document.getElementById("Title_grafic1")
+                                            .innerHTML =
+                                            "Gráfica de Predicción";
+                                        document.getElementById("graphic").src =
+                                            "../img/prediccion/temppred.png";
+                                    })
                             }
                         }
                         if (select == 'd') {
                             switch (dato) {
                                 case '10.51':
-                                    pred.value = '1.82'
-                                    r2.value = '0.5644'
-                                    error.value = '0.0539'
-                                    //Gráfica 1
-                                    document.getElementById("Title_grafic1").innerHTML =
-                                        "Gráfica de Predicción";
-                                    document.getElementById("graphic").src =
-                                        "../img/prediccion/distpred.png";
+                                    swal.fire({
+                                        title: "Ejecutando algoritmo...",
+                                        html: '',
+                                        timer: 20000,
+                                        timerProgressBar: true,
+                                        showConfirmButton: false,
+                                        animation: true,
+                                        onOpen: () => {
+                                            Swal.showLoading()
+                                        }
+                                    }).then((result) => {
+                                        pred.value = '1.82'
+                                        r2.value = '0.5644'
+                                        error.value = '0.0539'
+                                        //Gráfica 1
+                                        document.getElementById("Title_grafic1")
+                                            .innerHTML =
+                                            "Gráfica de Predicción";
+                                        document.getElementById("graphic").src =
+                                            "../img/prediccion/distpred.png";
+                                    })
 
                             }
 
@@ -279,6 +305,7 @@
                         if (select == 'h') {
                             switch (dato) {
                                 case '735':
+
                                     pred.value = '1.90'
                                     r2.value = '0.5644'
                                     error.value = '0.0539'

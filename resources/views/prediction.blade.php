@@ -243,6 +243,7 @@
                     xForPrediction = $('#x_input').val();
                 } else {
                     xForPrediction = x_input_hour.val() + x_input_minute.val()
+                    consoe.log(xForPrediction)
                 }
                 console.log(currentPackage)
                 namePackage = packages[currentPackage] || defaultPackage
@@ -298,6 +299,7 @@
                 }
                 var objectResponse = JSON.parse(String(resp.value))
                 console.log(objectResponse.size)
+
                 $("#val_prediction").val(objectResponse.prediction_for_value.toFixed(4) + "(Segundos)")
                 $("#score").val(objectResponse.probability.toFixed(4))
                 $("#error_margin").val((1 - objectResponse.probability).toFixed(4))
